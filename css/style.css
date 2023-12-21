@@ -1,0 +1,141 @@
+body {
+  background-color: #f7ecde;
+}
+
+.btn-submit {
+  color: #fff !important;
+  background-color: #d1512d !important;
+  border-color: #d1512d !important;
+  margin-top: 10px;
+}
+.btn-submit:hover {
+  background-color: #bb4120 !important;
+  border-color: #a03315 !important;
+}
+h2 {
+  font-family: cursive;
+}
+
+h1 {
+  font-family: Pacifico;
+  position: relative;
+  z-index: 999999999999999999999999999999999999999999;
+  transition: all 1s linear;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  bottom: 0;
+  background-color: #fec260;
+  z-index: -1;
+}
+h1:hover:before {
+  top: 30%;
+}
+.form {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: max-content;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-sm1 {
+  background-color: #8a9e23;
+  color: white;
+  border: #8a9e23;
+}
+.btn-sm1:hover {
+  background-color: #9bb322 !important;
+  color: white;
+}
+.btn-sm2 {
+  background-color: #d30820;
+  color: white;
+  border: #d30820;
+}
+.btn-sm2:hover {
+  background-color: #d01f33 !important;
+  color: white;
+}
+.box {
+  left: 32% !important;
+  width: 35% !important;
+  height: 250px !important;
+  top: 20% !important;
+  background-color: white !important;
+}
+.circles span {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+.btnx {
+  position: absolute;
+  top: 20px !important;
+  right: 20px !important;
+  background-color: white;
+}
+.circles {
+  position: absolute;
+  top: 30px !important;
+  left: 20px !important;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.654);
+  top: 0;
+  left: 0;
+}
+
+/*media*/
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .box {
+    width: 50% !important;
+    height: 300px !important;
+    left: 20% !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .box {
+    width: 80% !important;
+    height: 300px !important;
+    left: 13% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .box {
+    width: 80% !important;
+    height: 300px !important;
+    left: 12% !important;
+    top: 30% !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .box {
+    width: 80% !important;
+    height: 300px !important;
+    left: 13% !important;
+  }
+}

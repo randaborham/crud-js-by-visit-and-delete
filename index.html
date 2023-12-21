@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Chewy&family=Nunito:wght@200;300;400;600;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@600&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Chewy&family=Nunito:wght@200;300;400;600;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="bookmark.png" />
+    <!--bootstarp link-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--fontwesome link-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--style link-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="position-relative">
+    <div id="bg" class="bg position-absolute d-none"></div>
+
+    <div class="w-75 mx-auto">
+      <div
+        class="text d-flex flex-column justify-content-center align-items-center mb-3"
+      >
+        <h1 class="py-2 position-relative">Bookmarker</h1>
+      </div>
+
+      <div class="form py-5">
+        <div class="h2">
+          <h2 class="d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-bookmark me-1" style="color: #3fa55c"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark ms-1" style="color: #b1ab49"></i>
+          </h2>
+        </div>
+        <div class="inputname w-100 d-flex flex-column justify-content-center">
+          <label for="inputname" class="pb-2 fw-semibold">
+            <i class="fa-solid fa-book-bookmark pe-2"></i>
+            Site Name</label
+          >
+          <input
+            oninput="validitionName();"
+            type="text"
+            placeholder="Bookmark Name"
+            class="form-control"
+            id="inputName"
+          />
+        </div>
+        <div
+          class="inputurl w-100 d-flex flex-column justify-content-center mt-2"
+        >
+          <label for="inputurl" class="pb-2 fw-semibold">
+            <i class="fa-solid fa-link pe-2"></i>Site URL</label
+          >
+          <input
+            oninput="validitionURL();"
+            type="url"
+            placeholder="Website URL"
+            class="form-control"
+            id="inputurl"
+          />
+        </div>
+        <div
+          class="button d-flex justify-content-center align-items-center mt-3"
+        >
+          <button
+            onclick="Addurl();"
+            class="btn btn-submit px-5 small shadow"
+            id="submitBtn"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <table class="table my-3 text-center small shadow">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody"></tbody>
+      </table>
+
+      <div id="Box"
+        class= " d-none box d-flex ps-5 flex-column justify-content-center align-items-center bg-light w-40 mx-auto rounded-2 small shadow position-absolute top-50 "
+      >
+
+        <div class="top d-flex">
+          
+          <div class="circles d-flex justify-content-center align-items-center">
+            <span style="background-color: red;" class="rounded-circle me-2"></span>
+            <span style="background-color: #3fa55c;" class="rounded-circle me-2"></span>
+            <span style="background-color: coral;" class="rounded-circle me-2"></span>
+          </div>
+          <button onclick="Box();" class="btnx border-0" >
+            <i class="fa-solid fa-xmark close fs-3"></i>
+          </button>
+        </div>
+        <p class="m-0 pb-3 pt-1 fw-bold mt-5 fs-5 ">
+          Site Name or Url is not valid, Please follow the rules below :
+        </p>
+        <ul class="list list-unstyled m-0">
+          <li class="fw-bold">
+            <i style="color: red;" class="fa-regular fa-circle-right p-2 fw-bold"></i>Site name must contain
+            at least 3 characters 
+          </li>
+          <li class="fw-bold">
+            <i style="color: red;" class="fa-regular fa-circle-right p-2 fw-bold"></i>Site URL must be a
+            valid one
+          </li>
+        </ul>
+      </div>
+
+
+    <!--javasript link-->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
